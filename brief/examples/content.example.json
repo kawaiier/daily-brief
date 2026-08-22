@@ -1,0 +1,200 @@
+{
+  "date": "2026-08-21",
+  "title": "The Friday Brief · 21 Aug 2026",
+  "masthead": "The Friday Brief",
+  "marg_left": "Aug 21 2026 · Vol. IV",
+  "marg_right": "The day in one page",
+  "standfirst": "A light Friday: one hard push before noon, then two reviews and an early close. Two chases are overdue — see Owed to you.",
+  "credit": [
+    "The Japanese Footbridge",
+    "Claude Monet, 1899",
+    "National Gallery of Art, Washington"
+  ],
+  "vault": "YOUR_VAULT_NAME",
+  "hero": {
+    "src": "https://api.nga.gov/iiif/0b9cefb5-0000-0000-0000-000000000000/full/!1600,1600/0/default.jpg",
+    "fallback_src": "https://api.nga.gov/iiif/0b9cefb5-0000-0000-0000-000000000000/full/!800,800/0/default.jpg",
+    "bg_tint": "#2E3B36"
+  },
+  "push": {
+    "title": "Sign the Q3 scope change before standup",
+    "body": "The devs are blocked on the signed scope for the [Q3 landing page epic](https://your-jira.atlassian.net/browse/EX-114). It was drafted Tuesday; ten minutes with the PDF unblocks a team of five. Sign, upload to Drive, tag the epic.",
+    "seed": "I need to sign the Q3 scope change for the landing page epic and get it back to the team.\n\nWhere to look: EX-114 in Jira (the epic), the PDF 'Q3 Landing Page Scope v3' in Google Drive shared by Dana on 18 Aug, #eng-landing in Slack.\n\nDone looks like: the signed PDF uploaded back to the same Drive folder, the epic updated with the link, and a message in #eng-landing telling the team it is signed. You can reach Jira, Google Drive, Slack, and the web.",
+    "srcs": ["jira", "drive", "slack"],
+    "feedback_hint": "Wrong call? Different owner? Say so and I will redo the hand-off."
+  },
+  "sections": [
+    {
+      "label": "Top to-dos",
+      "sub": "Do these before anything else",
+      "srcs": ["tasks", "jira"],
+      "items": [
+        {
+          "id": "t1",
+          "act": "done",
+          "src": "jira",
+          "ref": "EX-114",
+          "title": "Sign and return Q3 scope change",
+          "href": "https://your-jira.atlassian.net/browse/EX-114",
+          "tag": "EX-114",
+          "glyphs": ["jira"],
+          "body": "Drafted Tuesday, blocks five devs. Ten minutes, then tag the epic."
+        },
+        {
+          "id": "t2",
+          "act": "done",
+          "src": "tasks",
+          "title": "Reply to Ana re: Q2 retro notes",
+          "glyphs": ["gmail"],
+          "body": "She needs the [retro doc](https://docs.google.com/document/d/example) by noon for the exec pack."
+        },
+        {
+          "id": "t3",
+          "act": "done",
+          "src": "github",
+          "ref": "PR #858",
+          "title": "Review the auth refactor PR",
+          "href": "https://github.com/your-org/your-repo/pull/858",
+          "tag": "PR #858",
+          "glyphs": ["github"],
+          "body": "Requested Monday, two approvals in, yours is the third. Merges today if you move."
+        }
+      ],
+      "feedback_hint": "Anything I got wrong, or should have caught."
+    },
+    {
+      "label": "New updates",
+      "sub": "Moved without you",
+      "srcs": ["slack", "jira", "github"],
+      "items": [
+        {
+          "id": "u1",
+          "act": "seen",
+          "src": "jira",
+          "ref": "EX-109",
+          "title": "EX-109 flipped to In Review",
+          "href": "https://your-jira.atlassian.net/browse/EX-109",
+          "tag": "EX-109",
+          "glyphs": ["jira"],
+          "avatars": [{"i": "m", "tint": true, "url": ""}],
+          "body": "Dana moved it last night; the reviewer is out until Monday."
+        },
+        {
+          "id": "u2",
+          "act": "seen",
+          "src": "slack",
+          "title": "#eng-landing went quiet on the outage",
+          "glyphs": ["slack"],
+          "body": "The incident thread from Wednesday closed unresolved — worth one look before the weekend."
+        },
+        {
+          "id": "u3",
+          "act": "seen",
+          "src": "github",
+          "title": "CI green on main again",
+          "glyphs": ["github"],
+          "body": "The flaky e2e suite was fixed by [PR #861](https://github.com/your-org/your-repo/pull/861)."
+        }
+      ]
+    },
+    {
+      "label": "Owed to you",
+      "sub": "Chase dates that passed",
+      "srcs": ["delegated"],
+      "items": [
+        {
+          "id": "o1",
+          "act": "stale",
+          "src": "delegated",
+          "ref": "D1",
+          "title": "Legal — privacy policy update",
+          "tag": "D-4",
+          "glyphs": ["delegated"],
+          "body": "Chase date was 17 Aug. Owner confirmed receipt, no movement since."
+        },
+        {
+          "id": "o2",
+          "act": "stale",
+          "src": "delegated",
+          "ref": "D2",
+          "title": "Marta — Q3 OKR draft",
+          "tag": "D-1",
+          "glyphs": ["delegated"],
+          "body": "Due yesterday. She pinged the channel; the draft never landed."
+        }
+      ]
+    },
+    {
+      "label": "Gone quiet",
+      "sub": "Open, untouched, nobody chasing",
+      "srcs": ["tasks"],
+      "items": [
+        {
+          "id": "g1",
+          "act": "stale",
+          "src": "tasks",
+          "ref": "TASKS.md",
+          "title": "Board note on hiring plan",
+          "tag": "18d",
+          "glyphs": ["tasks"],
+          "body": "Committed to the CEO 21 Jul, untouched since. The one that costs most to forget."
+        },
+        {
+          "id": "g2",
+          "act": "stale",
+          "src": "tasks",
+          "title": "Renew the analytics domain",
+          "tag": "24d",
+          "glyphs": ["tasks"],
+          "body": "Expires in three weeks; renewal is a five-minute form."
+        }
+      ]
+    }
+  ],
+  "day_srcs": ["cal"],
+  "day": [
+    {
+      "t": "09:30",
+      "n": "Standup",
+      "soft": false,
+      "who": [{"i": "team", "url": ""}],
+      "h": "Quick round. Push the scope sign-off; expect the usual two blockers.",
+      "p": "Nothing to prep — just bring the signed scope.",
+      "seed": "Prep me for the 09:30 standup.\n\nWhere to look: EX-114 in Jira, the Q3 scope PDF in Drive, #eng-landing in Slack.\n\nDone looks like: two bullets I can say out loud — status on the scope sign-off and one thing the team needs from me today. You can reach Jira, Drive, Slack, and the web."
+    },
+    {
+      "t": "11:00",
+      "n": "Q2 retro review — Ana",
+      "soft": false,
+      "who": [{"i": "a", "tint": true, "url": ""}],
+      "h": "Ana needs the retro notes for the exec pack; expect her to ask for the one open action.",
+      "p": "Find the retro doc and the one open action from Tuesday.",
+      "seed": "Prep me for the Q2 retro review with Ana at 11:00.\n\nWhere to look: the Q2 2026 retro notes doc in Google Drive, shared by Ana on 18 Aug; the open action in TASKS.md.\n\nDone looks like: the open action restated with owner and date, and a one-line answer if she asks whether it is done. You can reach Drive, TASKS.md, and the web."
+    },
+    {
+      "t": "14:00",
+      "n": "Design review — landing page",
+      "soft": false,
+      "who": [{"i": "d", "url": ""}],
+      "h": "Final pass on the Q3 landing; the devs need sign-off before the sprint closes.",
+      "p": "Refresh on the three open comments from Wednesday.",
+      "seed": "Prep me for the landing page design review at 14:00.\n\nWhere to look: EX-114 in Jira (the epic, comments tab), the Figma file 'Q3 Landing v4'.\n\nDone looks like: the three open comments from Wednesday with my position on each. You can reach Jira, Figma, and the web."
+    },
+    {
+      "t": "15:30",
+      "n": "School pickup — Maya",
+      "soft": true,
+      "who": [],
+      "h": "Personal. Pickup at the usual gate; rain forecast, take the car.",
+      "p": null
+    },
+    {
+      "t": "16:30",
+      "n": "1:1 — Dana (tomorrow)",
+      "soft": false,
+      "who": [{"i": "m", "tint": true, "url": ""}],
+      "h": "Tomorrow. Her first week back; expect a catch-up, not a review.",
+      "p": null
+    }
+  ]
+}

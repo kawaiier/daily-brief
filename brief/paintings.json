@@ -1,0 +1,962 @@
+[
+  {
+    "key": "0071862a",
+    "title": "The Children",
+    "artist": "Pissarro, Camille",
+    "year": "1880",
+    "src": "https://api.nga.gov/iiif/0071862a-d148-4a72-8012-5197eee507ed/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/164951.html"
+  },
+  {
+    "key": "0191f5a7",
+    "title": "Picking Flowers",
+    "artist": "Renoir, Auguste",
+    "year": "1875",
+    "src": "https://api.nga.gov/iiif/0191f5a7-69f5-4e95-a9cf-11fa232f6db2/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52205.html"
+  },
+  {
+    "key": "01ae11ed",
+    "title": "Pea Harvesters [recto]",
+    "artist": "Pissarro, Camille",
+    "year": "c. 1880",
+    "src": "https://api.nga.gov/iiif/01ae11ed-6df9-4815-bed3-1d8eb38aae8c/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/74185.html"
+  },
+  {
+    "key": "02c8ff0d",
+    "title": "Women on the Beach at Berck",
+    "artist": "Boudin, Eugène",
+    "year": "1881",
+    "src": "https://api.nga.gov/iiif/02c8ff0d-dc16-4120-b611-90a2ed8de407/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52159.html"
+  },
+  {
+    "key": "057b18ed",
+    "title": "Young Woman with a Straw Hat",
+    "artist": "Morisot, Berthe",
+    "year": "1884",
+    "src": "https://api.nga.gov/iiif/057b18ed-2c6c-44f5-a8c0-3e7aa95ab038/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52193.html"
+  },
+  {
+    "key": "05d1b6ea",
+    "title": "Entrance to the Harbor, Le Havre",
+    "artist": "Boudin, Eugène",
+    "year": "1883",
+    "src": "https://api.nga.gov/iiif/05d1b6ea-8357-4fe6-a2ca-2db4fff480c6/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/61366.html"
+  },
+  {
+    "key": "086a84c1",
+    "title": "Two Scouts",
+    "artist": "Homer, Winslow",
+    "year": "1887",
+    "src": "https://api.nga.gov/iiif/086a84c1-4b14-404d-813e-dbb54cf3d2e9/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/74781.html"
+  },
+  {
+    "key": "09fc94ea",
+    "title": "Oyster Sloop, Cos Cob",
+    "artist": "Hassam, Childe",
+    "year": "1902",
+    "src": "https://api.nga.gov/iiif/09fc94ea-6ce3-4359-8786-2ddf5121d222/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52244.html"
+  },
+  {
+    "key": "0a19ffb2",
+    "title": "Generalife",
+    "artist": "Sargent, Emily",
+    "year": "1912",
+    "src": "https://api.nga.gov/iiif/0a19ffb2-4b74-4f1c-a64f-57dd689436ea/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/222882.html"
+  },
+  {
+    "key": "0aa7a4e2",
+    "title": "Flowers in a Rococo Vase",
+    "artist": "Cezanne, Paul",
+    "year": "c. 1876",
+    "src": "https://api.nga.gov/iiif/0aa7a4e2-0231-4bb2-9f8a-90e754c58807/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46580.html"
+  },
+  {
+    "key": "0b9cefb5",
+    "title": "The Japanese Footbridge",
+    "artist": "Monet, Claude",
+    "year": "1899",
+    "src": "https://api.nga.gov/iiif/0b9cefb5-1ee4-401a-8154-8d4039191a28/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/74796.html"
+  },
+  {
+    "key": "0c1e8841",
+    "title": "The Artist's Daughter with a Parakeet",
+    "artist": "Morisot, Berthe",
+    "year": "1890",
+    "src": "https://api.nga.gov/iiif/0c1e8841-54d8-4457-9454-72d7a6268251/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46525.html"
+  },
+  {
+    "key": "0dff6c29",
+    "title": "A North East Headland",
+    "artist": "Hassam, Childe",
+    "year": "1901",
+    "src": "https://api.nga.gov/iiif/0dff6c29-1e00-45cb-90ba-49a8ef600e15/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/166452.html"
+  },
+  {
+    "key": "0eb31cfb",
+    "title": "The Mother and Sister of the Artist",
+    "artist": "Morisot, Berthe",
+    "year": "1869/1870",
+    "src": "https://api.nga.gov/iiif/0eb31cfb-ddba-41c2-a0a5-b6b2e41efadf/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46661.html"
+  },
+  {
+    "key": "101a64f4",
+    "title": "Study of a Rock [verso]",
+    "artist": "Cezanne, Paul",
+    "year": "c. 1895",
+    "src": "https://api.nga.gov/iiif/101a64f4-b845-4a7d-8271-65cf166514a5/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/93007.html"
+  },
+  {
+    "key": "101f6ae4",
+    "title": "Street in Venice",
+    "artist": "Sargent, John Singer",
+    "year": "1882",
+    "src": "https://api.nga.gov/iiif/101f6ae4-948e-4d84-923c-cdf4e37d2b36/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46428.html"
+  },
+  {
+    "key": "10fbf398",
+    "title": "The Green Dress",
+    "artist": "Dewing, Thomas Wilmer",
+    "year": "c. 1910",
+    "src": "https://api.nga.gov/iiif/10fbf398-1efa-4601-8099-42d357f49308/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/180698.html"
+  },
+  {
+    "key": "1101be9c",
+    "title": "Violet [Note?]...The Return of the Fishing Boats",
+    "artist": "Whistler, James McNeill",
+    "year": "c. 1885",
+    "src": "https://api.nga.gov/iiif/1101be9c-1f00-42c3-859b-711c7cc5c4c5/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/72047.html"
+  },
+  {
+    "key": "11262392",
+    "title": "Young Girl at a Window",
+    "artist": "Cassatt, Mary",
+    "year": "c. 1883-1884",
+    "src": "https://api.nga.gov/iiif/11262392-5f97-4c84-89b1-2239b14a20d0/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/97663.html"
+  },
+  {
+    "key": "1153f2b7",
+    "title": "Oarsmen at Chatou",
+    "artist": "Renoir, Auguste",
+    "year": "1879",
+    "src": "https://api.nga.gov/iiif/1153f2b7-bfe6-4159-8ca4-211ce86564b1/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/39759.html"
+  },
+  {
+    "key": "1155a052",
+    "title": "Home, Sweet Home",
+    "artist": "Homer, Winslow",
+    "year": "c. 1863",
+    "src": "https://api.nga.gov/iiif/1155a052-5f8d-4168-80dc-750ca9c5e497/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/79933.html"
+  },
+  {
+    "key": "11d76fd1",
+    "title": "Sara Wearing a Bonnet and Coat",
+    "artist": "Cassatt, Mary",
+    "year": "c. 1904/1906",
+    "src": "https://api.nga.gov/iiif/11d76fd1-b806-4e55-8435-b9bf9045bcc0/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/57658.html"
+  },
+  {
+    "key": "11dc7010",
+    "title": "Harvest Scene in the Delaware Valley",
+    "artist": "Inness, George",
+    "year": "1867",
+    "src": "https://api.nga.gov/iiif/11dc7010-58a3-465a-8134-7a08a563294a/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/125748.html"
+  },
+  {
+    "key": "156a7b00",
+    "title": "Resting",
+    "artist": "Sargent, John Singer, Follower of",
+    "year": "c. 1880-1890",
+    "src": "https://api.nga.gov/iiif/156a7b00-269a-465f-bad8-07104651f675/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/129312.html"
+  },
+  {
+    "key": "157279f0",
+    "title": "Peter A. B. Widener",
+    "artist": "Sargent, John Singer",
+    "year": "1902",
+    "src": "https://api.nga.gov/iiif/157279f0-8e4e-405d-9c4a-5250b47b2e14/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/1240.html"
+  },
+  {
+    "key": "15f8bb8b",
+    "title": "Allies Day, May 1917",
+    "artist": "Hassam, Childe",
+    "year": "1917",
+    "src": "https://api.nga.gov/iiif/15f8bb8b-ad0f-49e1-9948-60e87ede6be6/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/30115.html"
+  },
+  {
+    "key": "16d3f97b",
+    "title": "Hanging the Laundry out to Dry",
+    "artist": "Morisot, Berthe",
+    "year": "1875",
+    "src": "https://api.nga.gov/iiif/16d3f97b-02d2-4b95-a6c6-41385098d873/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/66426.html"
+  },
+  {
+    "key": "174d294f",
+    "title": "Pavement, Cairo",
+    "artist": "Sargent, John Singer",
+    "year": "1891",
+    "src": "https://api.nga.gov/iiif/174d294f-d2bd-4319-aada-9f217f2541ed/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/129288.html"
+  },
+  {
+    "key": "17dc4abd",
+    "title": "The Bather",
+    "artist": "Pissarro, Camille",
+    "year": "1895",
+    "src": "https://api.nga.gov/iiif/17dc4abd-c4dc-4dc5-b133-508d3e384f48/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46529.html"
+  },
+  {
+    "key": "18b01ccf",
+    "title": "Spanish Church Interior",
+    "artist": "Sargent, John Singer",
+    "year": "c. 1880",
+    "src": "https://api.nga.gov/iiif/18b01ccf-0df2-49ca-b099-7f22d2cb5831/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/129313.html"
+  },
+  {
+    "key": "18d283f5",
+    "title": "Salt Kettle, Bermuda",
+    "artist": "Homer, Winslow",
+    "year": "1899",
+    "src": "https://api.nga.gov/iiif/18d283f5-04d0-46f4-8f6b-f3cc3475cefe/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/55590.html"
+  },
+  {
+    "key": "1921981a",
+    "title": "Boulevard des Italiens, Morning, Sunlight",
+    "artist": "Pissarro, Camille",
+    "year": "1897",
+    "src": "https://api.nga.gov/iiif/1921981a-82c4-46ee-8cec-185aa18e2538/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46673.html"
+  },
+  {
+    "key": "192960e2",
+    "title": "At the Water's Edge",
+    "artist": "Cezanne, Paul",
+    "year": "c. 1890",
+    "src": "https://api.nga.gov/iiif/192960e2-e4f3-4645-be6f-414a492e1f48/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/53119.html"
+  },
+  {
+    "key": "194413f8",
+    "title": "The Rise",
+    "artist": "Homer, Winslow",
+    "year": "1900",
+    "src": "https://api.nga.gov/iiif/194413f8-3a52-4607-a875-ea35235979b8/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/55589.html"
+  },
+  {
+    "key": "1966f2a0",
+    "title": "Woman in a Crinoline on the Beach of Trouville",
+    "artist": "Boudin, Eugène",
+    "year": "c. 1865",
+    "src": "https://api.nga.gov/iiif/1966f2a0-170b-4a2a-b9ba-e16f53877f63/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/157926.html"
+  },
+  {
+    "key": "1b2b93ac",
+    "title": "Gondola Moorings on the Grand Canal",
+    "artist": "Sargent, John Singer",
+    "year": "1904/1907",
+    "src": "https://api.nga.gov/iiif/1b2b93ac-90a0-4034-8fa9-ebec47d51379/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52315.html"
+  },
+  {
+    "key": "1c2440bb",
+    "title": "Meadow",
+    "artist": "Sisley, Alfred",
+    "year": "1875",
+    "src": "https://api.nga.gov/iiif/1c2440bb-63a8-434b-8cd9-8307226aa917/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52227.html"
+  },
+  {
+    "key": "1d18373f",
+    "title": "The Mussel Harvest",
+    "artist": "Renoir, Auguste",
+    "year": "1879",
+    "src": "https://api.nga.gov/iiif/1d18373f-5ced-4d68-bbc5-c50097ca4644/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/42935.html"
+  },
+  {
+    "key": "1d276dec",
+    "title": "Woman with a Fan",
+    "artist": "Cassatt, Mary",
+    "year": "c. 1878/1879",
+    "src": "https://api.nga.gov/iiif/1d276dec-659b-498d-a603-71c97aa3452e/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46570.html"
+  },
+  {
+    "key": "1da48f73",
+    "title": "Three Women at Trouville",
+    "artist": "Boudin, Eugène",
+    "year": "c. 1865",
+    "src": "https://api.nga.gov/iiif/1da48f73-a783-4680-9434-6a7b9d6c4e4c/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52286.html"
+  },
+  {
+    "key": "1dfb18ca",
+    "title": "A Sick Chicken",
+    "artist": "Homer, Winslow",
+    "year": "1874",
+    "src": "https://api.nga.gov/iiif/1dfb18ca-87d7-4c71-a224-54dce5e3bf03/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/89665.html"
+  },
+  {
+    "key": "20818b10",
+    "title": "Children Playing on the Beach",
+    "artist": "Cassatt, Mary",
+    "year": "1884",
+    "src": "https://api.nga.gov/iiif/20818b10-1f66-4186-ac55-af70e3586084/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52163.html"
+  },
+  {
+    "key": "2142234c",
+    "title": "Still Life with Milk Jug and Fruit",
+    "artist": "Cezanne, Paul",
+    "year": "c. 1900",
+    "src": "https://api.nga.gov/iiif/2142234c-6ff3-43c7-a026-91c90a0bb86c/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/53123.html"
+  },
+  {
+    "key": "21b72d1f",
+    "title": "A Bridge and Campanile, Venice",
+    "artist": "Sargent, John Singer",
+    "year": "1902/1904",
+    "src": "https://api.nga.gov/iiif/21b72d1f-0364-4222-ac6e-147f87afac31/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52313.html"
+  },
+  {
+    "key": "22c24af2",
+    "title": "Cairo",
+    "artist": "Sargent, John Singer",
+    "year": "c. 1891",
+    "src": "https://api.nga.gov/iiif/22c24af2-20de-4f78-88c2-eb082c0c58c3/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/129319.html"
+  },
+  {
+    "key": "22c75e37",
+    "title": "Four Women at Trouville",
+    "artist": "Boudin, Eugène",
+    "year": "1865",
+    "src": "https://api.nga.gov/iiif/22c75e37-45cf-4741-bacd-4004a22541a8/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52281.html"
+  },
+  {
+    "key": "23a49029",
+    "title": "Boy in a Red Waistcoat",
+    "artist": "Cezanne, Paul",
+    "year": "1888-1890",
+    "src": "https://api.nga.gov/iiif/23a49029-bfee-49bf-8f6c-07394b98965c/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/93044.html"
+  },
+  {
+    "key": "23a7bb39",
+    "title": "Interior, after Dinner",
+    "artist": "Monet, Claude",
+    "year": "1868/1869",
+    "src": "https://api.nga.gov/iiif/23a7bb39-d6da-4cf4-8961-7e743fd39aba/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/61376.html"
+  },
+  {
+    "key": "24f75bef",
+    "title": "Winter Harmony",
+    "artist": "Twachtman, John Henry",
+    "year": "c. 1890/1900",
+    "src": "https://api.nga.gov/iiif/24f75bef-6596-4eac-8470-719b2f9876ec/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/50257.html"
+  },
+  {
+    "key": "26c52279",
+    "title": "The Artist's Sister at a Window",
+    "artist": "Morisot, Berthe",
+    "year": "1869",
+    "src": "https://api.nga.gov/iiif/26c52279-c2f8-409c-b7b4-467a38de2453/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52191.html"
+  },
+  {
+    "key": "2730a288",
+    "title": "Bridge at Caracas",
+    "artist": "Pissarro, Camille",
+    "year": "1854",
+    "src": "https://api.nga.gov/iiif/2730a288-74ab-4f69-95eb-6eb4d1d31430/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/66509.html"
+  },
+  {
+    "key": "27baf3ca",
+    "title": "Marly-le-Roi",
+    "artist": "Sisley, Alfred",
+    "year": "c. 1875",
+    "src": "https://api.nga.gov/iiif/27baf3ca-13f4-43ae-a17c-9d50785f526f/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/177090.html"
+  },
+  {
+    "key": "29f42b08",
+    "title": "Mademoiselle Sicot",
+    "artist": "Renoir, Auguste",
+    "year": "1865",
+    "src": "https://api.nga.gov/iiif/29f42b08-4e31-4a50-9a5f-f0f2d31a7f90/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46684.html"
+  },
+  {
+    "key": "2af9c50c",
+    "title": "Portrait of a Lady",
+    "artist": "Cassatt, Mary",
+    "year": "c. 1887",
+    "src": "https://api.nga.gov/iiif/2af9c50c-0aab-41ef-999a-1ab213713b39/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46482.html"
+  },
+  {
+    "key": "2c537630",
+    "title": "Bather Arranging Her Hair",
+    "artist": "Renoir, Auguste",
+    "year": "1893",
+    "src": "https://api.nga.gov/iiif/2c537630-f523-480f-9c1f-b89f1bac59a8/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46679.html"
+  },
+  {
+    "key": "2cf45b58",
+    "title": "Flowers in a Vase",
+    "artist": "Renoir, Auguste",
+    "year": "c. 1866",
+    "src": "https://api.nga.gov/iiif/2cf45b58-42eb-4359-a50f-b1143459a6be/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/61382.html"
+  },
+  {
+    "key": "2e5a816f",
+    "title": "Harvest Moon",
+    "artist": "Inness, George",
+    "year": "1891",
+    "src": "https://api.nga.gov/iiif/2e5a816f-77e1-4ea1-9774-ddd3b90496ba/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/178273.html"
+  },
+  {
+    "key": "2e694859",
+    "title": "Marie Buloz Pailleron (Madame Édouard Pailleron)",
+    "artist": "Sargent, John Singer",
+    "year": "1879",
+    "src": "https://api.nga.gov/iiif/2e694859-eac1-4662-b1dd-ac0d10273655/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/97063.html"
+  },
+  {
+    "key": "2f327993",
+    "title": "On the Sands",
+    "artist": "Homer, Winslow",
+    "year": "1881",
+    "src": "https://api.nga.gov/iiif/2f327993-832c-4e0f-8039-90d378bac74d/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/64550.html"
+  },
+  {
+    "key": "2f61c3b8",
+    "title": "Place du Carrousel, Paris",
+    "artist": "Pissarro, Camille",
+    "year": "1900",
+    "src": "https://api.nga.gov/iiif/2f61c3b8-00ff-41d4-941a-9d639c291472/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52199.html"
+  },
+  {
+    "key": "30176908",
+    "title": "Landscape, Ile-de-France",
+    "artist": "Pissarro, Camille",
+    "year": "1873",
+    "src": "https://api.nga.gov/iiif/30176908-83b2-4f53-9e84-1af98c8db759/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/164950.html"
+  },
+  {
+    "key": "312e50b3",
+    "title": "Madame Henriot",
+    "artist": "Renoir, Auguste",
+    "year": "c. 1876",
+    "src": "https://api.nga.gov/iiif/312e50b3-c177-4469-801f-35a718c9d00d/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46090.html"
+  },
+  {
+    "key": "316dc014",
+    "title": "George W. Vanderbilt",
+    "artist": "Whistler, James McNeill",
+    "year": "1897/1903",
+    "src": "https://api.nga.gov/iiif/316dc014-31c7-45a7-a52e-5c90c1e8e335/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/45880.html"
+  },
+  {
+    "key": "31b66660",
+    "title": "The Valley of the Seine, from the Hills of Giverny",
+    "artist": "Robinson, Theodore",
+    "year": "1892",
+    "src": "https://api.nga.gov/iiif/31b66660-52db-433c-a969-033fb716c138/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/166468.html"
+  },
+  {
+    "key": "31f31ddd",
+    "title": "Washerwoman near Trouville",
+    "artist": "Boudin, Eugène",
+    "year": "c. 1872/1876",
+    "src": "https://api.nga.gov/iiif/31f31ddd-bc7a-46e2-a3f5-ccb23873b60c/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/61365.html"
+  },
+  {
+    "key": "3301b7f7",
+    "title": "Young Girl with an Apron",
+    "artist": "Morisot, Berthe",
+    "year": "1891",
+    "src": "https://api.nga.gov/iiif/3301b7f7-ccf8-4ce9-8e7e-33c0b60048c9/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/131028.html"
+  },
+  {
+    "key": "33522e6c",
+    "title": "Portrait of an Old Lady",
+    "artist": "Robinson, J.C.",
+    "year": "1848",
+    "src": "https://api.nga.gov/iiif/33522e6c-05f0-4d27-911a-9a4c9f75cc83/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/43446.html"
+  },
+  {
+    "key": "33e69f85",
+    "title": "Landscape between Storms",
+    "artist": "Renoir, Auguste",
+    "year": "1874/1875",
+    "src": "https://api.nga.gov/iiif/33e69f85-6eec-4d80-8ddd-48fde0795bef/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52209.html"
+  },
+  {
+    "key": "34760616",
+    "title": "A Couple Seated on the Beach with Two Dogs",
+    "artist": "Boudin, Eugène",
+    "year": "c. 1865",
+    "src": "https://api.nga.gov/iiif/34760616-7942-4bbd-8bcc-30a59ad246aa/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/66470.html"
+  },
+  {
+    "key": "350ae4bb",
+    "title": "Girl with a Hoop",
+    "artist": "Renoir, Auguste",
+    "year": "1885",
+    "src": "https://api.nga.gov/iiif/350ae4bb-a288-4d65-be2a-0680e75ff6d6/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46533.html"
+  },
+  {
+    "key": "357b1f5b",
+    "title": "Mother of Pearl and Silver: The Andalusian",
+    "artist": "Whistler, James McNeill",
+    "year": "1888(?)-1900",
+    "src": "https://api.nga.gov/iiif/357b1f5b-2d1b-4bb1-8246-02e38b08476a/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/12197.html"
+  },
+  {
+    "key": "36bd94fc",
+    "title": "Morning Haze",
+    "artist": "Monet, Claude",
+    "year": "1888",
+    "src": "https://api.nga.gov/iiif/36bd94fc-291f-43cb-9fd4-7b391fe3f0e5/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/45872.html"
+  },
+  {
+    "key": "3725e9cb",
+    "title": "Granada",
+    "artist": "Sargent, Emily",
+    "year": "1912",
+    "src": "https://api.nga.gov/iiif/3725e9cb-71b0-4b1c-be19-92875c9efb6d/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/222883.html"
+  },
+  {
+    "key": "3814dad1",
+    "title": "Clouds over the Sea",
+    "artist": "Boudin, Eugène",
+    "year": "1860/1865",
+    "src": "https://api.nga.gov/iiif/3814dad1-d2e4-4fae-bafd-8f6e8bc850b1/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/143831.html"
+  },
+  {
+    "key": "38b5d6d9",
+    "title": "Suzanne Valadon",
+    "artist": "Renoir, Auguste",
+    "year": "c. 1885",
+    "src": "https://api.nga.gov/iiif/38b5d6d9-acd5-4a0b-bd88-0ece50cb989b/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46535.html"
+  },
+  {
+    "key": "391cb2aa",
+    "title": "First Snow at Veneux-Nadon",
+    "artist": "Sisley, Alfred",
+    "year": "1878",
+    "src": "https://api.nga.gov/iiif/391cb2aa-b6d1-4417-979c-9e29337ce027/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/62641.html"
+  },
+  {
+    "key": "3957d0b7",
+    "title": "Eddy Cassatt (Edward Buchanan Cassatt)",
+    "artist": "Cassatt, Mary",
+    "year": "1875",
+    "src": "https://api.nga.gov/iiif/3957d0b7-ae16-48b6-8046-dcf8bbd3ec1e/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/165887.html"
+  },
+  {
+    "key": "39a9ac6c",
+    "title": "Landscape at Les Pâtis, Pontoise",
+    "artist": "Pissarro, Camille",
+    "year": "1868",
+    "src": "https://api.nga.gov/iiif/39a9ac6c-8098-491f-8a9f-b517567275d5/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/72886.html"
+  },
+  {
+    "key": "3aabc076",
+    "title": "Coast of Brittany",
+    "artist": "Boudin, Eugène",
+    "year": "1870",
+    "src": "https://api.nga.gov/iiif/3aabc076-e658-48c9-b48c-d6ce8a868bde/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/61361.html"
+  },
+  {
+    "key": "3aacad2c",
+    "title": "Bacchus",
+    "artist": "Sargent, John Singer",
+    "year": "1874-1880",
+    "src": "https://api.nga.gov/iiif/3aacad2c-c965-4ae4-91c4-de98bc3c272a/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/184328.html"
+  },
+  {
+    "key": "3bbc8d53",
+    "title": "Camprodón, Spain",
+    "artist": "Sargent, John Singer",
+    "year": "c. 1892",
+    "src": "https://api.nga.gov/iiif/3bbc8d53-1af5-49dd-9feb-e764d138e696/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52314.html"
+  },
+  {
+    "key": "3c317769",
+    "title": "Danger",
+    "artist": "Homer, Winslow",
+    "year": "1883/1887",
+    "src": "https://api.nga.gov/iiif/3c317769-7f51-436e-8816-bdf4a724bb8a/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/64551.html"
+  },
+  {
+    "key": "3d26f129",
+    "title": "Autumn",
+    "artist": "Homer, Winslow",
+    "year": "1877",
+    "src": "https://api.nga.gov/iiif/3d26f129-aa76-4f97-b64d-bc0d4157207c/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/66420.html"
+  },
+  {
+    "key": "3df49ea6",
+    "title": "Wild Olive Tree Roots, Valldemosa, Majorca",
+    "artist": "Sargent, John Singer",
+    "year": "1908",
+    "src": "https://api.nga.gov/iiif/3df49ea6-27c1-4bf6-a122-3e996abc5a5b/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/73835.html"
+  },
+  {
+    "key": "3ebc1c6d",
+    "title": "Diana",
+    "artist": "Renoir, Auguste",
+    "year": "1867",
+    "src": "https://api.nga.gov/iiif/3ebc1c6d-6ab0-403d-bc31-e1a27ebc443e/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46680.html"
+  },
+  {
+    "key": "3f119583",
+    "title": "Hampton Court Green",
+    "artist": "Pissarro, Camille",
+    "year": "1891",
+    "src": "https://api.nga.gov/iiif/3f119583-f306-4b54-a3c4-e2a1978a3cf7/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52197.html"
+  },
+  {
+    "key": "4133ddae",
+    "title": "Symphony in White, No. 1: The White Girl",
+    "artist": "Whistler, James McNeill",
+    "year": "1861-1863, 1872",
+    "src": "https://api.nga.gov/iiif/4133ddae-6de0-4e9f-8ded-a43b2ac6c8c1/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/12198.html"
+  },
+  {
+    "key": "413faf9b",
+    "title": "Rouen Cathedral, West Façade",
+    "artist": "Monet, Claude",
+    "year": "1894",
+    "src": "https://api.nga.gov/iiif/413faf9b-5d86-468a-8363-eea43c7fe9ba/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46524.html"
+  },
+  {
+    "key": "4154e04d",
+    "title": "Tangier",
+    "artist": "Sargent, Emily",
+    "year": "1900",
+    "src": "https://api.nga.gov/iiif/4154e04d-3dd5-4b2c-9d95-006539d04fd3/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/222884.html"
+  },
+  {
+    "key": "41934d82",
+    "title": "The Lackawanna Valley",
+    "artist": "Inness, George",
+    "year": "c. 1856",
+    "src": "https://api.nga.gov/iiif/41934d82-bfb0-447b-b36e-d06dca991243/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/30776.html"
+  },
+  {
+    "key": "4196f97b",
+    "title": "The Artist's Garden in Argenteuil (A Corner of the Garden with Dahlias)",
+    "artist": "Monet, Claude",
+    "year": "1873",
+    "src": "https://api.nga.gov/iiif/4196f97b-1edb-4fae-aa9f-882afe35978b/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/72138.html"
+  },
+  {
+    "key": "4272d1b9",
+    "title": "Waking Up [verso]",
+    "artist": "Cezanne, Paul",
+    "year": "c. 1880",
+    "src": "https://api.nga.gov/iiif/4272d1b9-8575-492d-9c39-541c78b5c5e4/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/93005.html"
+  },
+  {
+    "key": "442a2aaf",
+    "title": "Big Ben",
+    "artist": "Hassam, Childe",
+    "year": "1897 and 1907",
+    "src": "https://api.nga.gov/iiif/442a2aaf-b6a7-4d46-b5c0-4473fe8942af/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/180937.html"
+  },
+  {
+    "key": "4486a977",
+    "title": "Campo dei Frari, Venice",
+    "artist": "Sargent, John Singer",
+    "year": "c. 1880",
+    "src": "https://api.nga.gov/iiif/4486a977-69a3-4590-bf13-2f8b50e81105/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/168825.html"
+  },
+  {
+    "key": "452e1836",
+    "title": "The Dinner Horn (Blowing the Horn at Seaside)",
+    "artist": "Homer, Winslow",
+    "year": "1870",
+    "src": "https://api.nga.gov/iiif/452e1836-9785-498f-a202-0fae2ddea167/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/89664.html"
+  },
+  {
+    "key": "482e9978",
+    "title": "Simplon Pass",
+    "artist": "Sargent, John Singer",
+    "year": "1911",
+    "src": "https://api.nga.gov/iiif/482e9978-5e15-4947-bf8b-67275347b13d/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/166471.html"
+  },
+  {
+    "key": "4848271f",
+    "title": "The New York Window",
+    "artist": "Hassam, Childe",
+    "year": "1912",
+    "src": "https://api.nga.gov/iiif/4848271f-e2ab-47e6-9055-cfab45b24b66/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/166494.html"
+  },
+  {
+    "key": "48e310d4",
+    "title": "Caravan with Covered Wagons Resting [recto]",
+    "artist": "Homer, Winslow",
+    "year": "1861",
+    "src": "https://api.nga.gov/iiif/48e310d4-7d98-43bb-a5d5-0bc856b97d28/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/98205.html"
+  },
+  {
+    "key": "4921828b",
+    "title": "Study of Flesh Color and Gold",
+    "artist": "Chase, William Merritt",
+    "year": "1888",
+    "src": "https://api.nga.gov/iiif/4921828b-f7f9-47d2-934a-724d418ca3c9/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/103252.html"
+  },
+  {
+    "key": "4adea567",
+    "title": "Louis Guillaume",
+    "artist": "Cezanne, Paul",
+    "year": "1879-1890",
+    "src": "https://api.nga.gov/iiif/4adea567-b912-4581-aa43-1247fde6d3b8/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46576.html"
+  },
+  {
+    "key": "4b9ac5d4",
+    "title": "The Road in the Woods",
+    "artist": "Sisley, Alfred",
+    "year": "1879",
+    "src": "https://api.nga.gov/iiif/4b9ac5d4-7ce4-4259-a28e-d8bbe6794ffe/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46690.html"
+  },
+  {
+    "key": "4bec9111",
+    "title": "Apollo and Daphne",
+    "artist": "Sargent, John Singer",
+    "year": "c. 1916/1919",
+    "src": "https://api.nga.gov/iiif/4bec9111-3728-48aa-8b37-3be8274d02a8/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/194944.html"
+  },
+  {
+    "key": "4c2c9fca",
+    "title": "Ship on the Touques",
+    "artist": "Boudin, Eugène",
+    "year": "c. 1888/1895",
+    "src": "https://api.nga.gov/iiif/4c2c9fca-0885-4227-8af9-43f178157b79/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/67349.html"
+  },
+  {
+    "key": "4d10c83f",
+    "title": "Josephine Knitting",
+    "artist": "Tarbell, Edmund",
+    "year": "1916",
+    "src": "https://api.nga.gov/iiif/4d10c83f-3901-4a65-aa90-b6bbba476fba/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/195455.html"
+  },
+  {
+    "key": "4dddacba",
+    "title": "Girl with Hay Rake",
+    "artist": "Homer, Winslow",
+    "year": "1878",
+    "src": "https://api.nga.gov/iiif/4dddacba-3d5c-40c9-91f3-ca7ee852ec21/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/55592.html"
+  },
+  {
+    "key": "4ea1a505",
+    "title": "Young Spanish Woman with a Guitar",
+    "artist": "Renoir, Auguste",
+    "year": "1898",
+    "src": "https://api.nga.gov/iiif/4ea1a505-ffe0-4045-9323-454992344051/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52220.html"
+  },
+  {
+    "key": "512bd61a",
+    "title": "The Calle della Rosa with the Monte di Pietà, Venice",
+    "artist": "Sargent, John Singer",
+    "year": "c. 1904",
+    "src": "https://api.nga.gov/iiif/512bd61a-634f-4581-b9ed-c9aaba6b3c87/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/129317.html"
+  },
+  {
+    "key": "51c334c8",
+    "title": "Ladies and Gentlemen on the Beach, in Two Registers",
+    "artist": "Boudin, Eugène",
+    "year": "c. 1865",
+    "src": "https://api.nga.gov/iiif/51c334c8-06df-4ef4-ba3a-2589b09a3e5a/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/66474.html"
+  },
+  {
+    "key": "51d16240",
+    "title": "The Loge",
+    "artist": "Cassatt, Mary",
+    "year": "c. 1878-1880",
+    "src": "https://api.nga.gov/iiif/51d16240-71d8-4332-8d8e-b5f1b211a06a/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46571.html"
+  },
+  {
+    "key": "5258dd44",
+    "title": "Washerwomen on the Beach of Etretat",
+    "artist": "Boudin, Eugène",
+    "year": "1894",
+    "src": "https://api.nga.gov/iiif/5258dd44-266b-4d20-b4eb-d8a26f5ecdda/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52161.html"
+  },
+  {
+    "key": "535245c8",
+    "title": "Young Woman Braiding Her Hair",
+    "artist": "Renoir, Auguste",
+    "year": "1876",
+    "src": "https://api.nga.gov/iiif/535245c8-9921-4526-8d1f-f67d80fa6bec/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52207.html"
+  },
+  {
+    "key": "5568ca30",
+    "title": "Girl in a Boat with Geese",
+    "artist": "Morisot, Berthe",
+    "year": "c. 1889",
+    "src": "https://api.nga.gov/iiif/5568ca30-4751-4861-b31a-9515a6114398/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52194.html"
+  },
+  {
+    "key": "56303f18",
+    "title": "Pont Neuf, Paris",
+    "artist": "Renoir, Auguste",
+    "year": "1872",
+    "src": "https://api.nga.gov/iiif/56303f18-6101-4d5d-9b03-20b58d657afa/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/52202.html"
+  },
+  {
+    "key": "579777b9",
+    "title": "Sainte-Adresse",
+    "artist": "Monet, Claude",
+    "year": "1867",
+    "src": "https://api.nga.gov/iiif/579777b9-33fb-493e-8e2c-89b972019854/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/71550.html"
+  },
+  {
+    "key": "58d82510",
+    "title": "Cordoba",
+    "artist": "Sargent, Emily",
+    "year": "1904",
+    "src": "https://api.nga.gov/iiif/58d82510-87e0-49cc-9ce4-ad1aa9b2b7fd/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/222880.html"
+  },
+  {
+    "key": "58e2aadf",
+    "title": "An English Cod",
+    "artist": "Chase, William Merritt",
+    "year": "1904",
+    "src": "https://api.nga.gov/iiif/58e2aadf-5b74-4a4c-b2ae-7e602250e7ac/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/195635.html"
+  },
+  {
+    "key": "59151ab6",
+    "title": "Under a Palm Tree",
+    "artist": "Homer, Winslow",
+    "year": "1886",
+    "src": "https://api.nga.gov/iiif/59151ab6-6d25-41ba-9f8c-0fc0f4ae4246/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/55591.html"
+  },
+  {
+    "key": "594b2f21",
+    "title": "Child with Toys - Gabrielle and the Artist's Son, Jean",
+    "artist": "Renoir, Auguste",
+    "year": "1895-1896",
+    "src": "https://api.nga.gov/iiif/594b2f21-2660-4a52-9c8e-599eb52c9079/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/66434.html"
+  },
+  {
+    "key": "5a1ed36d",
+    "title": "Church and Street, Camprodon",
+    "artist": "Sargent, Emily",
+    "year": "1902",
+    "src": "https://api.nga.gov/iiif/5a1ed36d-6131-470d-841c-4ec733c6d5b0/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/222876.html"
+  },
+  {
+    "key": "5bfb4c45",
+    "title": "Jerusalem Artichoke Flowers",
+    "artist": "Monet, Claude",
+    "year": "1880",
+    "src": "https://api.nga.gov/iiif/5bfb4c45-feb8-4dbb-8b77-519c0560dcaf/full/!1600,1600/0/default.jpg",
+    "page": "https://www.nga.gov/artworks/46656.html"
+  }
+]

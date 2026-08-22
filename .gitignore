@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build output
+/briefs/
+*.html
+!brief/examples/*.html
+
+# Local state
+content.json
+.DS_Store
