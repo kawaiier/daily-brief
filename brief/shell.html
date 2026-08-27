@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<style>
+/* ---- tokens --------------------------------------------------------- */
+:root{
+  --paper:#F5F1E8; --ink:#1A1818; --line:#C9BEAA; --tan:#B0A091;
+  --red:#D40029; --muted:#6B6355; --card:#FCFAF4; --soft:#EFE9DC;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--paper)}
+body{
+  font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink); background:var(--paper); -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:underline;text-decoration-color:var(--red)}
+b{font-weight:650}
+.page{max-width:920px;margin:0 auto;padding:0 22px 60px}
+
+/* ---- hero ------------------------------------------------------------ */
+.hero{position:relative;height:330px;overflow:hidden;margin:0 -22px;
+  background:{{HERO_BG_CSS}};background-size:cover;background-position:center}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.hero .scrim{position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.38) 0%,rgba(0,0,0,.12) 46%,rgba(0,0,0,.55) 100%)}
+.mast{
+  position:absolute;left:0;right:0;top:88px;text-align:center;color:#fff;
+  text-shadow:0 2px 18px rgba(0,0,0,.5);
+}
+.mast h1{
+  font-family:"Fraunces",Georgia,"Times New Roman",serif;font-weight:600;
+  font-size:56px;line-height:1.02;letter-spacing:.004em;padding:0 24px;
+}
+.rule{width:132px;height:3px;background:var(--red);margin:14px auto 12px;border-radius:2px}
+.mast .date{font-size:12.5px;letter-spacing:.34em;text-transform:uppercase;opacity:.92}
+.marg{position:absolute;top:16px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(255,255,255,.82);text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.marg.l{left:26px}.marg.r{right:26px}
+.credit{position:absolute;right:14px;bottom:10px;font-size:10.5px;line-height:1.4;
+  color:rgba(255,255,255,.85);text-align:right;text-shadow:0 1px 5px rgba(0,0,0,.55)}
+
+/* ---- standfirst ------------------------------------------------------ */
+.standfirst{margin:22px 0 6px;font-size:17.5px;line-height:1.5;color:var(--ink);
+  font-weight:400;max-width:62ch}
+.standfirst b{font-weight:650}
+
+/* ---- sections -------------------------------------------------------- */
+section{margin-top:26px;border-top:2px solid var(--ink);padding-top:12px}
+.slabel{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.slabel .kicker{font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
+.slabel .sub{font-size:12.5px;color:var(--muted)}
+.srcs{margin-left:auto;display:inline-flex;gap:14px;font-size:11px;color:var(--muted);flex-wrap:wrap}
+.srcs a{display:inline-flex;align-items:center;gap:4px;border-bottom:1px dotted transparent}
+.srcs a:hover{border-bottom-color:var(--tan);text-decoration:none;color:var(--ink)}
+.srcs svg{width:12px;height:12px;opacity:.75}
+
+/* rows */
+.row{display:flex;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.row:last-child{border-bottom:none}
+.chk{margin-top:3px;width:15px;height:15px;accent-color:var(--red);flex:none;cursor:pointer}
+.it-title{font-size:15px;font-weight:600;line-height:1.35}
+.it-title .tag{display:inline-block;margin-left:7px;font-size:10px;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--red);
+  border:1px solid var(--red);border-radius:20px;padding:1px 8px;vertical-align:1px}
+.it-title .glyphs{display:inline-flex;gap:3px;margin-left:6px;vertical-align:0}
+.it-title .glyphs svg{width:12px;height:12px}
+.ava{display:inline-block;width:18px;height:18px;border-radius:50%;margin-left:5px;
+  background:var(--tan);vertical-align:-4px;overflow:hidden;border:1.5px solid var(--paper)}
+.ava.b{border-color:var(--ink)}
+.ava img{width:100%;height:100%;object-fit:cover}
+.ava:empty{display:none}
+.it-body{font-size:13.5px;color:var(--muted);line-height:1.5;margin-top:2px;max-width:68ch}
+
+/* push */
+.pushbody .title{font-family:"Fraunces",Georgia,serif;font-size:21px;font-weight:600;
+  line-height:1.25;margin-bottom:6px}
+.pushbody>p{max-width:72ch;font-size:14.5px;line-height:1.6}
+.pushbody .cta{margin:12px 0 2px}
+.cta{display:inline-block;background:var(--ink);color:var(--paper);
+  padding:9px 16px;border-radius:2px;font-size:13px;font-weight:600;letter-spacing:.02em}
+.cta:hover{background:var(--red);text-decoration:none;color:#fff}
+.starburst{position:relative;display:inline-block;color:#fff}
+</style>
+<style>
+/* ---- feedback boxes --------------------------------------------------- */
+.fb{margin-top:8px;font-size:12.5px}
+.fbt{display:inline-flex;align-items:center;gap:5px;color:var(--muted);cursor:pointer;
+  user-select:none;font-size:12px;letter-spacing:.04em}
+.fbt:hover{color:var(--ink)}
+.pm{font-size:14px;line-height:1;font-weight:600;color:var(--red)}
+.fb textarea{display:none;width:100%;margin-top:8px;border:1px solid var(--line);
+  border-radius:3px;background:var(--card);color:var(--ink);
+  font:13px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  padding:9px 11px;min-height:54px;resize:vertical}
+.fb.open textarea{display:block}
+.fb.open .fbt{color:var(--ink)}
+
+/* ---- day rail --------------------------------------------------------- */
+.daywrap{margin-top:26px;border-top:2px solid var(--ink);padding-top:12px}
+.daygrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:12px;margin-top:12px}
+.daycard{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:11px 13px;
+  position:relative;display:flex;flex-direction:column;gap:6px}
+.daycard.soft{border-style:dashed;background:transparent}
+.daycard .t{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.daycard .n{font-size:14px;font-weight:650;line-height:1.3}
+.daycard .hint{font-size:12.5px;color:var(--muted);line-height:1.5}
+.daycard .who{display:flex;gap:4px;margin-top:2px}
+.daycard .cta{padding:6px 11px;font-size:12px;margin-top:2px;align-self:flex-start}
+.daycard .tomorrow{position:absolute;top:10px;right:12px;font-size:9.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--tan);border:1px solid var(--tan);border-radius:20px;padding:1px 7px}
+
+/* ---- copy bar ---------------------------------------------------------- */
+.copybar{position:sticky;bottom:14px;margin-top:30px;display:flex;justify-content:flex-end}
+.copybtn{background:var(--red);color:#fff;border:none;border-radius:3px;
+  padding:12px 22px;font:600 14px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  letter-spacing:.02em;cursor:pointer;box-shadow:0 6px 22px rgba(212,0,41,.28)}
+.copybtn:hover{background:#b30024}
+.copybtn.done{background:var(--muted)}
+.toast{position:fixed;left:50%;bottom:64px;transform:translateX(-50%);
+  background:var(--ink);color:var(--paper);font-size:13px;padding:10px 18px;border-radius:4px;
+  opacity:0;pointer-events:none;transition:opacity .25s;z-index:50}
+.toast.show{opacity:1}
+
+@media (max-width:640px){
+  .mast h1{font-size:38px}
+  .hero{height:260px}
+  .marg.l{left:14px}.marg.r{right:14px}
+}
+
+@font-face{
+  font-family:"Fraunces";font-weight:600;font-style:normal;
+  src:url(data:font/ttf;base64,__FONT_B64__) format("truetype");
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hero">
+    <div class="scrim"></div>
+    {{HERO_IMG}}
+    <div class="marg l">{{MARG_L}}</div>
+    <div class="marg r">{{MARG_R}}</div>
+    <div class="mast">
+      <h1>{{MASTHEAD}}</h1>
+      <div class="rule"></div>
+      <div class="date">{{DATE}}</div>
+    </div>
+    <div class="credit">{{CREDIT}}</div>
+  </div>
+
+  <p class="standfirst">{{STANDFIRST}}</p>
+
+  <section class="push">
+    <div class="slabel"><span class="kicker">Push your work forward</span>{{PUSH_SRCS}}</div>
+    {{PUSH_BODY}}
+    <a class="cta" target="_blank" rel="noopener" href="{{PUSH_SEED}}">Let's do it</a>
+  </section>
+
+  {{SECTIONS}}
+
+  <div class="daywrap">
+    <div class="slabel"><span class="kicker">Your day</span>{{DAY_SRCS}}</div>
+    <div class="daygrid" id="day"></div>
+  </div>
+
+  <div class="copybar"><button class="copybtn" id="copy">Copy for Claude</button></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* data injected by build.py */
+{{JS_DATA}}
+
+const ACT_LABEL = {done: "Done", seen: "Already knew this", stale: "No longer relevant"};
+
+/* ---- avatars ---------------------------------------------------------- */
+function avaHTML(k){
+  if (!k || !A[k]) return "";
+  const [name, tint, url] = A[k];
+  const img = url ? `<img src="${url}" alt="" onerror="this.remove()">` : "";
+  return `<span class="ava${tint ? " b" : ""}" title="${(name || "").replace(/"/g, "&quot;")}">${img}</span>`;
+}
+
+/* ---- day rail --------------------------------------------------------- */
+const dayEl = document.getElementById("day");
+DAY.forEach(d => {
+  const card = document.createElement("div");
+  card.className = "daycard" + (d.soft ? " soft" : "");
+  let who = "";
+  if (d.who && d.who.length) who = `<span class="who">${d.who.map(avaHTML).join("")}</span>`;
+  let btn = "";
+  if (d.seed) {
+    btn = `<a class="cta" target="_blank" rel="noopener" href="https://claude.ai/new?q=${encodeURIComponent(d.seed)}&surface=cowork&composer=mini">Prep me</a>`;
+  }
+  card.innerHTML =
+    `<span class="t">${d.t}</span>` +
+    `<span class="n">${(d.n || "").replace(/</g, "&lt;")}</span>` +
+    who +
+    `<span class="hint">${(d.h || "").replace(/</g, "&lt;")}</span>` +
+    btn;
+  dayEl.appendChild(card);
+});
+
+/* ---- feedback boxes --------------------------------------------------- */
+document.querySelectorAll(".fb").forEach(fb => {
+  const t = fb.querySelector(".fbt");
+  t.addEventListener("click", () => fb.classList.toggle("open"));
+});
+
+/* ---- tick semantics + copy ------------------------------------------- */
+const copyBtn = document.getElementById("copy");
+const toast = document.getElementById("toast");
+function showToast(msg){
+  toast.textContent = msg;
+  toast.classList.add("show");
+  clearTimeout(showToast._t);
+  showToast._t = setTimeout(() => toast.classList.remove("show"), 2200);
+}
+
+copyBtn.addEventListener("click", () => {
+  const ticked = [], notes = [];
+  document.querySelectorAll(".row").forEach(row => {
+    const cb = row.querySelector(".chk");
+    if (!cb) return;
+    if (cb.checked) {
+      ticked.push({
+        act: row.dataset.act || "done",
+        src: row.dataset.src || "",
+        ref: row.dataset.ref || "",
+        title: (row.querySelector(".it-title") || {}).textContent || ""
+      });
+    }
+  });
+  document.querySelectorAll(".fb textarea").forEach(ta => {
+    if (ta.value.trim()) {
+      const sec = ta.closest(".fb").dataset.sec || "General";
+      notes.push({sec, text: ta.value.trim()});
+    }
+  });
+
+  const lines = ["## Ticked", ""];
+  if (!ticked.length) lines.push("_Nothing ticked._", "");
+  const groups = {};
+  ticked.forEach(t => {
+    const k = `${ACT_LABEL[t.act] || t.act} · ${t.src}`;
+    (groups[k] = groups[k] || []).push(t);
+  });
+  Object.entries(groups).forEach(([k, items]) => {
+    lines.push(`### ${k}`, "");
+    items.forEach(t => {
+      const ref = t.ref ? ` — \`${t.ref}\`` : "";
+      lines.push(`- ${t.title}${ref}`);
+    });
+    lines.push("");
+  });
+
+  if (notes.length) {
+    lines.push("## Notes", "");
+    notes.forEach(n => {
+      lines.push(`### ${n.sec}`, "");
+      lines.push(`> ${n.text}`, "");
+      lines.push("");
+    });
+  }
+
+  const md = lines.join("\n");
+  navigator.clipboard.writeText(md).then(() => {
+    copyBtn.textContent = "Copied ✓";
+    copyBtn.classList.add("done");
+    setTimeout(() => {
+      copyBtn.textContent = "Copy for Claude";
+      copyBtn.classList.remove("done");
+    }, 1600);
+    showToast("Markdown copied — paste it into Claude to close the loop");
+  }).catch(() => showToast("Copy failed — select and copy manually"));
+});
+</script>
+</body>
+</html>
