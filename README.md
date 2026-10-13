@@ -54,6 +54,8 @@ A newspaper, not a dashboard:
 daily-brief/
 ├── README.md               # this file
 ├── LICENSE                 # MIT
+├── CHANGELOG.md            # what changed in each release
+├── IMPROVEMENTS.md         # the improvement scope this repo tracks (IMP-1…IMP-7)
 ├── brief/
 │   ├── SPEC.md             # what a run does — edit this, not the task prompt
 │   ├── content.schema.md   # the contract for content.json
@@ -67,8 +69,10 @@ daily-brief/
 ├── task/
 │   ├── scheduler-prompt.md # the ~8-line prompt you give your scheduler
 │   └── brief.css           # editor/console theme for the example (optional)
-└── scripts/
-    └── build_manifest.py   # rebuild paintings.json from NGA open data (optional)
+├── scripts/
+│   └── build_manifest.py   # rebuild paintings.json from NGA open data (optional)
+└── tests/
+    └── test_brief_build.py # renders the example and checks the self-contained contract
 ```
 
 ## Quick start
@@ -86,7 +90,8 @@ open /tmp/brief-2026-08-21.html
 ```
 
 That's it. The example brief builds with zero external dependencies — the painting and the
-font are already baked in.
+font are already baked in. Run `python3 brief/build.py --help` for the command line, and
+`python3 -m unittest discover -s tests` to run the test suite.
 
 ## Making it yours
 
@@ -95,7 +100,8 @@ font are already baked in.
 2. **Edit `brief/SPEC.md`** — the switch table at the top (hero mode, max items per section,
    notify policy) is the only thing you should ever need to change.
 3. **Write your daily content** as `content.json` per `content.schema.md`, or let your agent
-   do it.
+   do it. `build.py` validates the content against the schema and exits non-zero naming the
+   offending field if anything is missing or malformed.
 4. **Run** `python3 brief/build.py content.json brief-2026-08-21.html`.
 5. **Schedule it** with the prompt in `task/scheduler-prompt.md` — it works with Claude
    Cowork scheduled tasks, a Hermes cron job, or a plain OS cron.

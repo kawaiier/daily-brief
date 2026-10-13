@@ -179,11 +179,13 @@ section{margin-top:26px;border-top:2px solid var(--ink);padding-top:12px}
 const ACT_LABEL = {done: "Done", seen: "Already knew this", stale: "No longer relevant"};
 
 /* ---- avatars ---------------------------------------------------------- */
+/* A and DAY are HTML-escaped by build.py at the trust boundary, so the values
+   below are inserted as-is. Seeds stay raw and are encoded into the URL. */
 function avaHTML(k){
   if (!k || !A[k]) return "";
   const [name, tint, url] = A[k];
   const img = url ? `<img src="${url}" alt="" onerror="this.remove()">` : "";
-  return `<span class="ava${tint ? " b" : ""}" title="${(name || "").replace(/"/g, "&quot;")}">${img}</span>`;
+  return `<span class="ava${tint ? " b" : ""}" title="${name}">${img}</span>`;
 }
 
 /* ---- day rail --------------------------------------------------------- */
@@ -199,9 +201,9 @@ DAY.forEach(d => {
   }
   card.innerHTML =
     `<span class="t">${d.t}</span>` +
-    `<span class="n">${(d.n || "").replace(/</g, "&lt;")}</span>` +
+    `<span class="n">${d.n}</span>` +
     who +
-    `<span class="hint">${(d.h || "").replace(/</g, "&lt;")}</span>` +
+    `<span class="hint">${d.h}</span>` +
     btn;
   dayEl.appendChild(card);
 });

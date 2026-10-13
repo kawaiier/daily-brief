@@ -8,6 +8,14 @@ All text fields are plain strings. `build.py` escapes everything — pass raw te
 Links are written as `[label](https://...)` and **bold** as `**text**`; the script converts
 them.
 
+## Validation
+
+`build.py` checks `content.json` against this contract before rendering. On a missing or
+mistyped field it exits non-zero naming the offending path (for example
+`sections[2].items[0].act must be one of done, seen, stale`) instead of raising a Python
+traceback, so a broken run fails loudly rather than shipping a half-rendered page. Run
+`python3 brief/build.py --help` for the command line.
+
 ## Top level
 
 | Field | Type | Required | Notes |

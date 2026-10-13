@@ -1,0 +1,164 @@
+/* Daily Brief — editor/console theme for the bundled example.
+ *
+ * Optional stylesheet for previewing the example brief (or diffing
+ * brief/examples/content.example.json) in an editor preview pane or a
+ * terminal-style console. It mirrors the paper/ink tokens from
+ * brief/shell.html so a preview matches the rendered brief. It is not
+ * loaded by brief/build.py and is not required to build or run the pipeline.
+ */
+
+:root {
+  --paper: #F5F1E8;
+  --ink: #1A1818;
+  --line: #C9BEAA;
+  --tan: #B0A091;
+  --red: #D40029;
+  --muted: #6B6355;
+  --card: #FCFAF4;
+  --soft: #EFE9DC;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+}
+
+body.console-theme {
+  margin: 0;
+  padding: 24px;
+  background: var(--paper);
+  color: var(--ink);
+  font: 13px/1.6 var(--mono);
+  -webkit-font-smoothing: antialiased;
+}
+
+.console-theme .masthead {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  border-bottom: 3px solid var(--ink);
+  padding-bottom: 10px;
+  margin-bottom: 6px;
+}
+
+.console-theme .deck {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.console-theme .rule {
+  width: 132px;
+  height: 3px;
+  background: var(--red);
+  border-radius: 2px;
+  margin: 12px 0 18px;
+}
+
+.console-theme section {
+  margin-top: 22px;
+  padding-top: 10px;
+  border-top: 2px solid var(--ink);
+}
+
+.console-theme .section-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.console-theme .section-label .sub {
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--muted);
+}
+
+.console-theme .row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.console-theme .row .check {
+  flex: none;
+  margin-top: 3px;
+  accent-color: var(--red);
+}
+
+.console-theme .row .title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.console-theme .row .body {
+  color: var(--muted);
+  margin-top: 2px;
+  max-width: 68ch;
+}
+
+.console-theme .tag {
+  display: inline-block;
+  margin-left: 7px;
+  padding: 1px 8px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--red);
+  border: 1px solid var(--red);
+  border-radius: 20px;
+  vertical-align: 1px;
+}
+
+.console-theme .card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 11px 13px;
+}
+
+.console-theme .cta {
+  display: inline-block;
+  padding: 8px 15px;
+  font-weight: 600;
+  color: var(--paper);
+  background: var(--ink);
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.console-theme .cta:hover {
+  color: #fff;
+  background: var(--red);
+}
+
+.console-theme pre,
+.console-theme code {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+}
+
+.console-theme pre {
+  padding: 12px 14px;
+  overflow: auto;
+}
+
+.console-theme code {
+  padding: 1px 5px;
+}
+
+.console-theme a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--tan);
+}
+
+.console-theme a:hover {
+  color: var(--red);
+  border-bottom-color: var(--red);
+}
