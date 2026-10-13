@@ -53,6 +53,7 @@ A newspaper, not a dashboard:
 ```
 daily-brief/
 ├── README.md               # this file
+├── LICENSE                 # MIT
 ├── CHANGELOG.md            # what changed in each release
 ├── IMPROVEMENTS.md         # the improvement scope this repo tracks (IMP-1…IMP-7)
 ├── brief/
@@ -151,6 +152,4 @@ paste into a chat that updates `TASKS.md`, `DELEGATED.md` and the relevant ticke
 
 ## License
 
-MIT. The font is OFL-licensed; the painting metadata is CC0 (NGA Open Data).
-
-See `CHANGELOG.md` for what changed in each release.
+MIT. The font is OFL-licensed; the painting metadata is CC0 (NGA Open Data). See `LICENSE`.
