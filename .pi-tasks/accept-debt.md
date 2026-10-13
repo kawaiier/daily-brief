@@ -1,0 +1,1 @@
+TASK_0002	acceptance untested: `brief/build.py` has no test "renders content.json into a self-contained HTML brief" (no title) — write each so it fails when that behaviour breaks; a test that stubs the behaviour itself observes nothing
