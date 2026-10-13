@@ -7,7 +7,7 @@ Design lives here and in shell.html. Content lives in content.json.
 Never paste the font base64 into a prompt or read fraunces-600.b64 into context;
 this script substitutes it from disk.
 """
-import html, json, pathlib, re, sys, urllib.parse
+import argparse, datetime, html, json, pathlib, re, urllib.parse
 
 HERE = pathlib.Path(__file__).resolve().parent
 SEED_BASE = "https://claude.ai/new?q="
@@ -49,6 +49,90 @@ def e(s):
 
 def seed(text):
     return SEED_BASE + urllib.parse.quote(text or "", safe="") + SEED_TAIL
+
+
+def _js(obj):
+    """JSON for embedding inside a <script> element.
+
+    Escapes the characters that can close the script block (<, >, &) and the JS
+    line separators U+2028/U+2029, so gathered text can never break out.
+    """
+    return (
+        json.dumps(obj, ensure_ascii=False)
+        .replace("&", "\\u0026")
+        .replace("<", "\\u003c")
+        .replace(">", "\\u003e")
+        .replace("\u2028", "\\u2028")
+        .replace("\u2029", "\\u2029")
+    )
+
+
+# ---------------------------------------------------------------- validation
+REQUIRED_TOP = (
+    "date", "title", "masthead", "marg_left", "marg_right", "standfirst", "push", "sections",
+)
+REQUIRED_PUSH = ("title", "body", "seed")
+REQUIRED_ITEM = ("id", "act", "src", "title")
+ALLOWED_ACT = ("done", "seen", "stale")
+
+
+def validate(content):
+    """Return a list of human-readable problems with content.json (empty = ok).
+
+    Mirrors brief/content.schema.md so a broken run fails loudly with the field
+    that is wrong, instead of a KeyError traceback.
+    """
+    if not isinstance(content, dict):
+        return ["top level must be a JSON object"]
+    problems = []
+    for key in REQUIRED_TOP:
+        if key not in content:
+            problems.append("missing required field: %s" % key)
+    if "date" in content:
+        date = content["date"]
+        if not isinstance(date, str):
+            problems.append("date must be a string in YYYY-MM-DD form")
+        else:
+            try:
+                datetime.date.fromisoformat(date)
+            except ValueError:
+                problems.append("date must be YYYY-MM-DD, got %r" % date)
+    if "push" in content:
+        push = content["push"]
+        if not isinstance(push, dict):
+            problems.append("push must be an object")
+        else:
+            for key in REQUIRED_PUSH:
+                if key not in push:
+                    problems.append("missing required field: push.%s" % key)
+    if "sections" in content:
+        sections = content["sections"]
+        if not isinstance(sections, list):
+            problems.append("sections must be an array")
+        else:
+            for i, sec in enumerate(sections):
+                if not isinstance(sec, dict):
+                    problems.append("sections[%d] must be an object" % i)
+                    continue
+                if "label" not in sec:
+                    problems.append("missing required field: sections[%d].label" % i)
+                items = sec.get("items")
+                if not isinstance(items, list):
+                    problems.append("sections[%d].items must be an array" % i)
+                    continue
+                for j, item in enumerate(items):
+                    where = "sections[%d].items[%d]" % (i, j)
+                    if not isinstance(item, dict):
+                        problems.append("%s must be an object" % where)
+                        continue
+                    for key in REQUIRED_ITEM:
+                        if key not in item:
+                            problems.append("missing required field: %s.%s" % (where, key))
+                    if "act" in item and item["act"] not in ALLOWED_ACT:
+                        problems.append(
+                            "%s.act must be one of %s" % (where, ", ".join(ALLOWED_ACT))
+                        )
+    return problems
 
 
 # ---------------------------------------------------------------- components
@@ -138,7 +222,12 @@ def push_body(p):
 
 
 def js_data(content):
-    """Avatar registry + the Your day rail, as JS literals."""
+    """Avatar registry + the Your day rail, as JS literals.
+
+    Display strings are HTML-escaped here, at the trust boundary, so the shell can
+    insert them with innerHTML without re-escaping. Seeds stay raw (they are
+    percent-encoded into a URL at runtime) but the JSON is escaped for the script.
+    """
     A, seen = {}, {}
 
     def key(a):
@@ -151,28 +240,25 @@ def js_data(content):
         who = [key(a) for a in d.get("who", [])]
         day.append(
             {
-                "t": d["t"],
-                "n": d["n"],
+                "t": e(d.get("t", "")),
+                "n": e(d.get("n", "")),
                 "soft": bool(d.get("soft")),
                 "who": who,
-                "h": d["h"],
-                "p": d.get("p"),
+                "h": e(d.get("h", "")),
+                "p": e(d.get("p", "")),
                 "seed": d.get("seed"),
             }
         )
     for k, a in seen.items():
-        A[k] = [a.get("i", ""), "b" if a.get("tint") else "", a.get("url")]
-    return (
-        "const A = "
-        + json.dumps(A, ensure_ascii=False)
-        + ";\nconst DAY = "
-        + json.dumps(day, ensure_ascii=False)
-        + ";"
-    )
+        A[k] = [e(a.get("i", "")), "b" if a.get("tint") else "", e(a.get("url", ""))]
+    return "const A = " + _js(A) + ";\nconst DAY = " + _js(day) + ";"
 
 
 # ---------------------------------------------------------------- main
 def build(content):
+    problems = validate(content)
+    if problems:
+        raise SystemExit("content.json is not valid:\n  - " + "\n  - ".join(problems))
     ctx = {"vault": content.get("vault", "YOUR_VAULT_NAME")}
     y, m, d = content["date"].split("-")
     ctx.update(y=int(y), m=int(m), d=int(d))
@@ -212,7 +298,7 @@ def build(content):
         "{{CREDIT}}": "<br>".join(e(l) for l in content.get("credit", [])),
         "{{PUSH_BODY}}": push_body(content["push"]),
         "{{PUSH_SRCS}}": srcs(content["push"].get("srcs", ["delegated", "jira"]), ctx),
-        "{{PUSH_SEED}}": json.dumps(seed(content["push"].get("seed", ""))),
+        "{{PUSH_SEED}}": e(seed(content["push"].get("seed", ""))),
         "{{SECTIONS}}": "".join(section(s, ctx) for s in content["sections"]),
         "{{DAY_SRCS}}": srcs(content.get("day_srcs", ["cal"]), ctx),
         "{{JS_DATA}}": js_data(content),
@@ -233,13 +319,29 @@ def build(content):
     return shell
 
 
+def main(argv=None):
+    parser = argparse.ArgumentParser(
+        prog="build.py",
+        description="Render the daily brief from content.json into a single self-contained HTML file.",
+        epilog="Design lives in shell.html; content lives in content.json. "
+        "The font and hero wash are read from disk and never belong in a prompt.",
+    )
+    parser.add_argument("content", type=pathlib.Path, help="path to content.json")
+    parser.add_argument("output", type=pathlib.Path, help="path to write the rendered HTML brief")
+    args = parser.parse_args(argv)
+    try:
+        content = json.loads(args.content.read_text())
+    except FileNotFoundError:
+        raise SystemExit("no such file: %s" % args.content)
+    except json.JSONDecodeError as exc:
+        raise SystemExit("%s is not valid JSON: %s" % (args.content, exc))
+    html_out = build(content)
+    args.output.write_text(html_out)
+    print("wrote %s (%d bytes)" % (args.output, len(html_out)))
+
+
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        raise SystemExit(__doc__)
-    src, out = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
-    html_out = build(json.loads(src.read_text()))
-    out.write_text(html_out)
-    print("wrote %s (%d bytes)" % (out, len(html_out)))
+    main()
 
 
 

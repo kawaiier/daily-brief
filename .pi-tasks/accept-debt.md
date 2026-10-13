@@ -1,1 +1,1 @@
-TASK_0002	acceptance untested: `brief/build.py` has no test "renders content.json into a self-contained HTML brief" (no title) — write each so it fails when that behaviour breaks; a test that stubs the behaviour itself observes nothing
+TASK_AUTO_0001	UNOBSERVED — NOT a pass: no integration, lockfile or boot command was discoverable here, so the gate ran nothing at all; statics passed, but this run produced NO evidence that the assembled product builds, boots or works.	final-gate

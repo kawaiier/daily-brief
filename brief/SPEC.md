@@ -148,7 +148,8 @@ Standfirst ~25 words. Day-pane paragraphs ~25 words. Push body ~50. US English.
 1. Stage `Routines/daily-brief/` into the container.
 2. Write `content.json` against `content.schema.md`.
 3. `python3 build.py content.json brief-YYYY-MM-DD.html` — it fails loudly on an unfilled
-   slot rather than shipping a broken page. Never read `fraunces-600.b64` into context; the
+   slot, or on content that violates `content.schema.md`, rather than shipping a broken page.
+   Run `python3 build.py --help` for usage. Never read `fraunces-600.b64` into context; the
    script substitutes it.
 4. Screenshot with the preinstalled Chromium and **look at the image**. Check: marginalia
    centred on the hero, no console errors, every item title linked, source chips present,
