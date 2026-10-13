@@ -1,1 +1,0 @@
-TASK_AUTO_0001	UNOBSERVED — NOT a pass: no integration, lockfile or boot command was discoverable here, so the gate ran nothing at all; statics passed, but this run produced NO evidence that the assembled product builds, boots or works.	final-gate

@@ -12,3 +12,4 @@ venv/
 # Local state
 content.json
 .DS_Store
+.pi-tasks/
